@@ -1,0 +1,322 @@
+/* Dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #000000; /* Semua teks berwarna hitam (kecuali yang diubah secara eksplisit) */
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.main-content {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/* Navbar */
+header {
+  background-color: #ffffff;
+  border-bottom: 2px solid #e0e0e0;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 15);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-right: 15px;
+}
+
+.logo-text h1 {
+  font-size: 24px;
+  color: #2ca59c;
+  margin-bottom: 2px;
+}
+
+.logo-text p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  padding: 8px 14px;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+nav ul li a:hover,
+nav ul li.active a {
+  background-color: #2ca59c;
+  color: #ffffff;
+}
+
+/* main content */
+
+/* Banner Section */
+.banner-section {
+  padding: 30px;
+  background-color: #f8f9fa;
+}
+
+.banner-container {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.banner-images {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 10px;
+}
+
+.main-banner {
+  grid-row: span 2;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.small-banner {
+  width: 100%;
+  height: 145px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ekstrakurikuler-badge {
+  background: linear-gradient(135deg, #ff8c42, #ffa566);
+  color: white;
+  padding: 20px 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(255, 140, 66, 0.3);
+  min-width: 200px;
+  position: relative;
+}
+
+.ekstrakurikuler-badge::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #ff8c42;
+}
+
+.ekstrakurikuler-badge h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.ekstrakurikuler-badge p {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+/* Content Section */
+.content-section {
+  padding: 40px 30px;
+}
+
+.content-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.text-content h2 {
+  font-size: 28px;
+  color: #2c5aa0;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.text-content p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  text-align: justify;
+  color: #555;
+}
+
+.ekstrakurikuler-title {
+  text-align: center;
+  margin: 40px 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #e3f2fd, #f8f9fa);
+  border-radius: 10px;
+}
+
+.ekstrakurikuler-title h3 {
+  font-size: 24px;
+  color: #2c5aa0;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.ekstrakurikuler-title p {
+  font-size: 14px;
+  color: #ff8c42;
+  margin: 0;
+}
+
+/* Activities Grid */
+.activities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.activity-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e8f4fd;
+}
+
+.activity-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.activity-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.activity-card h4 {
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  color: #2c5aa0;
+  font-weight: 600;
+  background-color: #f8f9fa;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .navbar a {
+    font-size: 12px;
+  }
+
+  .banner-container {
+    flex-direction: column;
+  }
+
+  .banner-images {
+    grid-template-columns: 1fr;
+  }
+
+  .main-banner {
+    height: 200px;
+    grid-row: span 1;
+  }
+
+  .ekstrakurikuler-badge {
+    align-self: center;
+    min-width: auto;
+  }
+
+  .ekstrakurikuler-badge::before {
+    display: none;
+  }
+
+  .banner-section,
+  .content-section {
+    padding: 20px 15px;
+  }
+
+  .activities-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+  }
+
+  .text-content h2 {
+    font-size: 24px;
+  }
+
+  .ekstrakurikuler-title h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo span {
+    font-size: 14px;
+  }
+
+  .activities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .activity-card h4 {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .activity-card img {
+    height: 120px;
+  }
+}
