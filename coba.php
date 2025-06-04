@@ -250,7 +250,7 @@
           margin: 0;
         }
 
-        /* tampilan ekstrakurikuler */
+        /* Responsive Design */
         .grid-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
