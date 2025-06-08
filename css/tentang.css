@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #f5f5f5;
+  background-color: #ffffff;
 }
 
 .container {
@@ -31,29 +31,31 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 15);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
 }
 
 .logo-container {
   display: flex;
   align-items: center;
+  margin-left: 50px;
 }
 
 .logo-container img {
-  width: 80px;
-  height: 80px;
+  width: 100;
+  height: 100px;
   object-fit: contain;
   margin-right: 15px;
+  padding-right: 10px;
 }
 
 .logo-text h1 {
-  font-size: 24px;
+  font-size: 35px;
   color: #2ca59c;
   margin-bottom: 2px;
 }
 
 .logo-text p {
-  font-size: 14px;
+  font-size: 24px;
   color: #555;
   margin: 0;
 }
@@ -63,6 +65,7 @@ nav ul {
   display: flex;
   gap: 25px;
   align-items: center;
+  font-size: 20px;
 }
 
 nav ul li {
@@ -84,154 +87,309 @@ nav ul li.active a {
   color: #ffffff;
 }
 
-/* Header content */
-
-/* Main Content */
-.main-content {
-  padding: 40px 0;
+/* Profil-sekolah */
+.Profil-sekolah {
+  position: relative;
+  background: url("../img/design1.png") no-repeat center center/cover;
+  min-height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 20px;
 }
 
-/* School Title */
-.school-title {
+.judul {
   text-align: center;
   margin-bottom: 40px;
+  width: 100%;
 }
 
-.school-title h2 {
-  font-size: 32px;
+.judul h2 {
+  font-size: 52px;
   font-weight: bold;
-  color: #2c5530;
-  margin-bottom: 20px;
+  color: #29e2ba;
+  margin: 0;
 }
 
-/* School Info Section */
-.school-info {
+.content-container {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1400px;
+  width: 100%;
   gap: 40px;
-  align-items: flex-start;
-  margin-bottom: 50px;
-  background-color: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
-.school-logo {
+.logosekolah {
   flex-shrink: 0;
 }
 
-.school-emblem {
-  width: 150px;
-  height: 150px;
-  border-radius: 10px;
+.logosekolah img {
+  width: 250px;
+  height: 250px;
+  border-radius: 8px;
 }
 
-.school-description {
+.welcome-text {
   flex: 1;
+  padding-top: 60px;  
 }
 
-.school-description p {
+.welcome-text h2 {
+  color: #3caea3;
+  margin-bottom: 20px;
+  font-size: 45px;
+}
+
+.welcome-text span {
+  color: #000000;
+}
+
+.welcome-text p {
   margin-bottom: 15px;
+  color: #000000;
+  font-size: 25px;
   text-align: justify;
-  line-height: 1.7;
-  color: #555;
 }
 
-/* Vision and Mission Section */
-.vision-mission {
+/* Visi-misi */
+.tabel {
+  max-width: 1200%;
+  position: relative;
+  background: #00a896;
+  padding-bottom: 40px;
+  gap: 30px;
+  display: flex;
+}
+
+.visi-misi-container {
+  max-width: 1200px;
+  margin: 30px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  margin-bottom: 50px;
+  gap: 40px;
+  margin-bottom: 40px;
 }
 
-.vision-box,
-.mission-box {
-  background-color: white;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-}
-
-.section-title {
-  background-color: #ff8c42;
-  color: white;
-  text-align: center;
-  padding: 12px;
-  border-radius: 8px;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.vision-list,
-.mission-list {
-  list-style: none;
-  counter-reset: item-counter;
-}
-
-.vision-list li,
-.mission-list li {
-  counter-increment: item-counter;
-  padding: 8px 0;
+.visi-section, .misi-section {
   position: relative;
-  padding-left: 25px;
-  line-height: 1.5;
-  color: #555;
+  transition: transform 0.3s ease;
 }
 
-.vision-list li::before,
-.mission-list li::before {
-  content: counter(item-counter) ".";
-  position: absolute;
-  left: 0;
+.visi-section:hover, .misi-section:hover {
+  transform: translateY(-5px);
+}
+
+.section-header {
+  background-color: #ffa127;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
   font-weight: bold;
-  color: #ff8c42;
-}
-
-/* Quote Section */
-.quote-section {
   text-align: center;
-  padding: 40px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 15px 40px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(90, 74, 74, 0.2);
+  border-radius: 25px;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(79, 172, 254, 0.3);
 }
 
-.school-quote {
-  font-size: 24px;
-  font-style: italic;
-  color: #2c5530;
-  font-weight: 500;
-  line-height: 1.4;
+.section-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
 }
 
-.highlight-orange {
-  color: #ff8c42;
+.section-header:hover::before {
+  left: 100%;
+}
+
+.misi-section .section-header {
+  background-color: #ffa127;
+  box-shadow: 0 8px 20px rgba(250, 112, 154, 0.3);
+}
+
+.content-box {
+  padding: 50px 30px 285px 30px;
+  background: white;
+  min-height: 400px;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-top: 20px;
+}
+
+.content-misi {
+  padding: 50px 30px 21px 30px;
+  background: white;
+  min-height: 400px;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-top: 20px;
+}
+
+.misi-list {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+  padding-left: 0;
+  counter-reset: misi-counter;
+  list-style: none;
+}
+
+.misi-list li {
+  counter-increment: misi-counter;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  background-color: #ffffff;
+  background-size: 200% 200%;
+  background-position: 100% 0;
+  color: rgb(0, 0, 0);
+  border-radius: 15px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.misi-list li:hover {
+  background-position: 0 100%;
+  transform: translateX(10px);
+  box-shadow: 0 8px 25px rgba(240, 147, 251, 0.4);
+}
+
+.misi-list li::before {
+  content: counter(misi-counter);
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: bold;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
 }
 
+/* visi */
+.visi-text {
+  font-size: 1.1rem;
+  line-height: 2;
+  color: #333;
+  text-align: left;
+  font-weight: 500;
+}
+
+.visi-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+  padding-left: 0;
+  counter-reset: misi-counter;
+  list-style: none;
+}
+
+.visi-text li {
+  counter-increment: misi-counter;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  background-color: #ffffff;
+  background-size: 200% 200%;
+  background-position: 100% 0;
+  color: rgb(0, 0, 0);
+  border-radius: 15px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.visi-text li:hover {
+  background-position: 0 100%;
+  transform: translateX(10px);
+  box-shadow: 0 8px 25px rgba(240, 147, 251, 0.4);
+}
+
+.visi-text li::before {
+  content: counter(misi-counter);
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+/* Quotes */
+.word {
+  position: relative;
+  background: url("../img/design2.png") no-repeat center center/cover;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 20px;
+}
+.Quotes {
+  margin-top: 160px;
+  text-align: center;
+}
+
+.Quotes h2 {
+  color: #000000;
+  margin-bottom: 20px;
+  font-size: 45px;
+}
+
+.Quotes span {
+  color: #ffa127;
+}
 /* Footer */
 footer {
-  background-color: #f5f5f5;
   padding-top: 40px;
   padding-bottom: 40px;
-}
-
-.back-link {
-  color: #777;
-  margin-left: 45px;
-  margin-bottom: 15px;
-  display: block;
-  text-decoration: none;
+  gap: 30px;
+  display: flex;
+  margin: 50px;
+  border-radius: 4; 
+  justify-content: center;
 }
 
 .footer-container {
-  max-width: 1000px;
-  margin: 0 auto;
+  max-width: none; /* Hapus max-width limitation */
+  width: 99%; /* Full width container */
   position: relative;
 }
 
+/* logo judul */
 .header {
   background-color: white;
   padding: 15px 20px;
@@ -267,30 +425,33 @@ footer {
 .badge {
   background-color: #00a896;
   color: white;
-  padding: 5px 12px;
+  padding: 5px 20px;
   border-radius: 20px;
   font-size: 14px;
   display: inline-block;
 }
 
+/* card */
 .card {
   background-color: #00a896;
   border-radius: 15px;
-  padding: 40px 45px;
-  margin-top: 30px;
-  display: flex;
-  justify-content: space-between;
+  padding: 40px 50px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%; 
+  box-sizing: border-box; 
+  align-items: center;
+  gap: 40px;
+  display: flex;
 }
 
 .contact-info {
-  flex: 1;
+  flex: 2;
   margin-top: 50px;
 }
 
 .contact-info p {
   margin-bottom: 12px;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.6;
   color: #ffffff;
 }
@@ -300,6 +461,7 @@ footer {
   font-weight: bold;
 }
 
+/* maps */
 .map-section {
   flex: 1;
   display: flex;
@@ -310,77 +472,26 @@ footer {
 .map-section h2 {
   margin-bottom: 15px;
   font-size: 18px;
+  font-weight: bold;
   font-weight: normal;
   align-self: flex-end;
   color: #ffffff;
 }
 
 .map {
-  width: 100%;
-  max-width: 300px;
-  height: 200px;
+  max-width: 10px;
+  height: 100px;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .map img {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 150%;
   object-fit: cover;
+  font-size: large;
+  font-weight: bold;
 }
 
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .header .container {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .navigation ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  .school-info {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .vision-mission {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .school-quote {
-    font-size: 20px;
-  }
-
-  .school-title h2 {
-    font-size: 24px;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    padding: 0 15px;
-  }
-
-  .main-content {
-    padding: 20px 0;
-  }
-
-  .school-info,
-  .vision-box,
-  .mission-box,
-  .quote-section {
-    padding: 20px;
-  }
-
-  .school-quote {
-    font-size: 18px;
-  }
-}
 
