@@ -112,5 +112,35 @@
             </div>
         </div>
     </section>
+    <footer>
+        <!-- <a href="#" class="back-link">Back</a> -->
+        <div class="footer-container">
+            <div class="header">
+                <img src="img/Logo.jpg" alt="Logo SMPN 2 Prambon" class="logo">
+                <div class="title">
+                    <h1>SPENDAPRA</h1>
+                    <div class="badge">SMPN 2 PRAMBON</div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="contact-info">
+                    <p><b>Alamat :</b> Jl. Raya Prambon Kajartengguli, Kec. Prambon, Kab Sidoarjo, Jawa Timur.</p>
+                    <p><b>WA :</b> 081233518800</p>
+                    <p><b>Instagram :</b> @smpn2_prambon</p>
+                    <p><b>Email :</b> Spendapra@gmail.com</p>
+                </div>
+                
+                <div class="map-section">
+                    <h2>Lokasi Sekolah</h2>
+                    <iframe 
+                    src="https://www.google.com/maps/place/SMPN+2+PRAMBON/@-7.4668017,112.5605438,17z/data=!3m1!4b1!4m6!3m5!1s0x2e780b0029c5ca87:0x2bedf254132eb7fe!8m2!3d-7.4668017!4d112.5631187!16s%2Fg%2F11vmb3xhgm!5m1!1e1?entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

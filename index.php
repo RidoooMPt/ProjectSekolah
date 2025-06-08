@@ -71,7 +71,7 @@
         <!-- School Info -->
 <section class="Judul-konten">
     <div class="Judul1">
-    <iframe width="350" height="200" src="https://www.youtube.com/embed/uGn3aXdUcAE?si=DO6b-zSzCEoJwZ9I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/H0EaKPaqt4Y?si=dLtxtaLGoka7qenn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div class="text">
             <h3><span>SMP 2 Negeri</span> Prambon</h3>
             <p>
@@ -82,10 +82,8 @@
         </div>
     </div>
 </section>
-
     <!-- Footer -->
     <footer>
-        <!-- <a href="#" class="back-link">Back</a> -->
         <div class="footer-container">
             <div class="header">
                 <img src="img/Logo.jpg" alt="Logo SMPN 2 Prambon" class="logo">
