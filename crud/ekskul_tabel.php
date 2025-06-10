@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Admin - ekstrakurikuler</title>
+    <title>Admin - Website SMPN 2 Prambon</title>
     <style>
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px;
-            background-color: #00A99D; /* Warna dari gambar */
+            background-color: #00A99D; /* Warna dari foto */
             color: #fff;
         }
 
@@ -56,7 +56,7 @@
         }
 
         .table thead tr {
-            background-color: #00A99D; /* Warna dari gambar */
+            background-color: #00A99D; /* Warna dari foto */
             color: #ffffff;
             text-align: left;
             font-weight: bold;
@@ -76,7 +76,7 @@
         }
 
         .table tbody tr:last-of-type {
-            border-bottom: 2px solid #00A99D; /* Warna dari gambar */
+            border-bottom: 2px solid #00A99D; /* Warna dari foto */
         }
 
         .table tbody tr:hover {
@@ -85,7 +85,7 @@
 
         .table a {
             text-decoration: none;
-            color: #00A99D; /* Warna dari gambar */
+            color: #00A99D; /* Warna dari foto */
             font-weight: bold;
             margin-right: 10px;
         }
@@ -101,7 +101,7 @@
 
         .header h1 {
             font-size: 2.5em;
-            color: #00A99D; /* Warna dari gambar */
+            color: #00A99D; /* Warna dari foto */
         }
 
         img {
@@ -124,14 +124,24 @@
         .btn-tambah:hover {
             background-color: #00c8b6;
         }
+
+        footer {
+            margin-top: auto;
+            background-color: #00c8b6;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
     <header>
         <ul class="navlist">
-            <li><a href="ekskul_tabel" class="active">Ekskul</a></li>
-            <li><a href="">Event</a></li>
-            <li><a href="">Transaksi</a></li>
+            <li><a href="user_tabel.php">User</a></li>
+            <li><a href="ekskul_tabel.php" class="active">Ekstrakurikuler</a></li>
+            <li><a href="guru_tabel.php">Guru</a></li>
+            <li><a href="KritikSaran_tabel.php">Kritik & Saran</a></li>
             <li><a href="../beranda.php">Log Out</a></li>
         </ul>
         <div class="bx bx-menu" id="menu-icon"></div>
@@ -160,7 +170,7 @@
             <tr>
                 <td><?php echo $nomor++; ?></td>
                 <td><?php echo $data['nama']; ?></td>
-                <td><img src="<?php echo $data['gambar']; ?>" alt="Gambar Ekstrakurikuler"></td>
+                <td><img src="<?php echo $data['foto']; ?>" alt="Gambar Ekstrakurikuler"></td>
                 <td>
                     <a href='ekskul_edit.php?id=<?php echo $data['id'];?>'>Edit</a>
                     <a href='ekskul_delete.php?id=<?php echo $data['id'];?>'>Delete</a>
@@ -169,5 +179,8 @@
         <?php } ?>
         </tbody>
     </table>
+    <footer>
+        <p>&copy; 2025 ProjectSekolah. Kelompok 14. All rights reserved.</p>
+    </footer>
 </body>
 </html>

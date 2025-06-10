@@ -384,7 +384,7 @@
                   while($data = mysqli_fetch_array($result)){
                       ?>
                       <div class="grid-item">
-                          <img src="<?php echo $data['gambar'] ?>">
+                          <img src="<?php echo $data['foto'] ?>">
                           <strong><h3><?php echo $data['nama']; ?></h3></strong>
                       </div>
                   <?php } ?>
