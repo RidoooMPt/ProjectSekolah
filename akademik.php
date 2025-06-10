@@ -310,7 +310,7 @@
 <body>
     <header>
         <div class="logo-container">
-            <img src="/api/placeholder/80/80" alt="Logo Spendapra" />
+            <img src="img/Logo.jpg" alt="Logo Spendapra" />
             <div class="logo-text">
                 <h1>SPENDAPRA</h1>
                 <p>SMPN 2 PRAMBON</p>
