@@ -18,7 +18,7 @@
             </div>
             <nav>
                 <ul class="active">
-                    <li><a href="utama.php">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="tentang.php">Tentang Spendapra</a></li>
                     <li><a href="akademik.php">Akademik</a></li>
                     <li><a href="profil.php">Profil Guru</a></li>

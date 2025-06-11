@@ -22,7 +22,7 @@
         </div>
         <nav id="nav-menu">
             <ul class="active">
-                <li><a href="utama.php">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="tentang.php">Tentang Spendapra</a></li>
                 <li><a href="akademik.php">Akademik</a></li>
                 <li><a href="profil.php">Profil Guru</a></li>
@@ -32,40 +32,41 @@
             </ul>
         </nav>
     </header>
-    <!-- Rest of your HTML remains the same -->
     <!-- Body walppeper -->
     <section class="hero">
-        <div class="overlay">
-            <img src="img/logo.png" alt="Logo Spendapra" class="hero-logo">
-            <div class="small-logo">
-                <h2>SPENDAPRA</h2>
-                <p>SMP NEGERI 2 PRAMBON</p>
+        <div class="gradien">
+            <div class="overlay">
+                <img src="img/logo.png" alt="Logo Spendapra" class="hero-logo">
+                <div class="small-logo">
+                    <h2>SPENDAPRA</h2>
+                    <p>SMP NEGERI 2 PRAMBON</p>
+                </div>
             </div>
         </div>
     </section>
     <!-- Body tabel -->
-    <section>
-    <nav class="top-nav ">
-        <div class="nav-container">
-            <a href="#" class="nav-item">
-                <div class="nav-icon">📚</div>
-                <p>Tentang Spendapra</p>
-            </a>
-            <a href="#" class="nav-item">
-                <div class="nav-icon ">🎓</div>
-                <p>Akademik</p>
-            </a>
-            <a href="#" class="nav-item">
-                <div class="nav-icon">📜</div>
-                <p>Kritik & Saran</p>
-            </a>
-            <a href="#" class="nav-item">
-                <div class="nav-icon">📰</div>
-                <p>Berita</p>
-            </a>
-        </div>
-    </nav>
-    </section>
+    <section class="listcolumn">
+        <nav class="top-nav ">
+            <div class="nav-container">
+                <a href="#" class="nav-item">
+                    <div class="nav-icon">📚</div>
+                    <p>Tentang Spendapra</p>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-icon ">🎓</div>
+                    <p>Akademik</p>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-icon">📜</div>
+                    <p>Kritik & Saran</p>
+                </a>
+                <a href="#" class="nav-item">
+                    <div class="nav-icon">📰</div>
+                    <p>Berita</p>
+                </a>
+            </div>
+        </nav>
+        </section>
     <!-- Profil kepsek -->
      <section>
         <div class="block-bg main-content">
@@ -91,7 +92,7 @@
          <section class="list-space">
          <section>
             <div class="Judul1">
-                <iframe width="760" height="275" src="https://www.youtube.com/embed/H0EaKPaqt4Y?si=dLtxtaLGoka7qenn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="760" height="275" src="https://www.youtube.com/embed/H0EaKPaqt4Y?si=rHUAoyNXiEFt8SRh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <div class="text">
                         <h3><span>SMP NEGERI 2 </span> PRAMBON</h3>
                         <p>
