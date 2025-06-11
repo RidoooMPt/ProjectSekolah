@@ -253,10 +253,11 @@
         /* tampilan ekstrakurikuler */
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            grid-template-columns: repeat(2, 1fr); /* Ubah dari auto-fit menjadi 2 kolom tetap */
             gap: 20px;
             margin-top: 30px;
         }
+
 
         .grid-item {
             background: #ffffff;
@@ -321,7 +322,7 @@
                 <li><a href="index.php">Home</a></li>
                 <li><a href="tentang.php">Tentang Spendapra</a></li>
                 <li class="active"><a href="akademik.php">Akademik</a></li>
-                <li><a href="profil.php">Profil Guru</a></li>
+                <li><a href="profil_guru.php">Profil Guru</a></li>
                 <li><a href="pendaftaran.php">Pendaftaran</a></li>
                 <li><a href="login.php">Login</a></li>
                 <li><a href="signin.php">Sign In</a></li>

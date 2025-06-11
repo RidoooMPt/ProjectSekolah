@@ -22,10 +22,10 @@
         </div>
         <nav>
             <ul class="active">
-                <li><a href="utama.php">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="tentang.php">Tentang Spendapra</a></li>
                 <li><a href="akademik.php">Akademik</a></li>
-                <li><a href="profil.php">Profil Guru</a></li>
+                <li><a href="profil_guru.php">Profil Guru</a></li>
                 <li><a href="pendaftaran.php">Pendaftaran</a></li>
                 <li><a href="PHP/login.php">Login</a></li>
                 <li><a href="PHP/signin.php">Sign In</a></li>
@@ -106,8 +106,8 @@
         <section>
             <div class="word">
                 <div class="Quotes">
-                    <h2>mewujudkan peserta didik yang<br>
-                        <span> berkarakter,Berprestasi</span> dan <span>peduli lingkungan</span></h2>
+                    <h2>Mewujudkan Peserta Didik yang<br>
+                        <span> Berkarakter,Berprestasi</span> dan <span>Peduli Lingkungan</span></h2>
                   </div>
             </div>
         </section>

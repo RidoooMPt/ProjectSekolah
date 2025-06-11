@@ -32,7 +32,13 @@ header {
   align-items: center;
   flex-wrap: wrap;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1001;
 }
+
 
 .logo-container {
   display: flex;
@@ -41,7 +47,7 @@ header {
 }
 
 .logo-container img {
-  width: 100;
+  width: 100px;
   height: 100px;
   object-fit: contain;
   margin-right: 15px;
@@ -60,12 +66,24 @@ header {
   margin: 0;
 }
 
+/* Hamburger menu - hidden by default */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 0px 0px 10px 150px;
+  color: #2ca59c;
+}
+
+/* Navigation menu - desktop styles */
 nav ul {
   list-style: none;
   display: flex;
   gap: 25px;
   align-items: center;
   font-size: 20px;
+  /* Hapus position: fixed dan properti terkait */
+  /* Navbar sekarang akan mengikuti alur dokumen, tidak menempel saat scroll */
 }
 
 nav ul li {

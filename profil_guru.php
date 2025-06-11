@@ -18,10 +18,10 @@
             </div>
             <nav>
                 <ul class="active">
-                    <li><a href="utama.php">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="tentang.php">Tentang Spendapra</a></li>
                     <li><a href="akademik.php">Akademik</a></li>
-                    <li><a href="profil.php">Profil Guru</a></li>
+                    <li><a href="profil_guru.php">Profil Guru</a></li>
                     <li><a href="pendaftaran.php">Pendaftaran</a></li>
                     <li><a href="PHP/login.php">Login</a></li>
                     <li><a href="PHP/signin.php">Sign In</a></li>

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman utama</title>
-    <link rel="stylesheet" href="css/utama.css">
+    <title>Halaman Index</title>
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -22,10 +22,10 @@
         </div>
         <nav id="nav-menu">
             <ul class="active">
-                <li><a href="utama.php">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="tentang.php">Tentang Spendapra</a></li>
                 <li><a href="akademik.php">Akademik</a></li>
-                <li><a href="profil.php">Profil Guru</a></li>
+                <li><a href="profil_guru.php">Profil Guru</a></li>
                 <li><a href="pendaftaran.php">Pendaftaran</a></li>
                 <li><a href="PHP/login.php">Login</a></li>
                 <li><a href="PHP/Signin.php">Sign In</a></li>
@@ -47,11 +47,11 @@
     <section>
     <nav class="top-nav ">
         <div class="nav-container">
-            <a href="#" class="nav-item">
+            <a href="tentang.php" class="nav-item">
                 <div class="nav-icon">📚</div>
                 <p>Tentang Spendapra</p>
             </a>
-            <a href="#" class="nav-item">
+            <a href="akademik.php" class="nav-item">
                 <div class="nav-icon ">🎓</div>
                 <p>Akademik</p>
             </a>
@@ -59,7 +59,7 @@
                 <div class="nav-icon">📜</div>
                 <p>Kritik & Saran</p>
             </a>
-            <a href="#" class="nav-item">
+            <a href="akademik.php" class="nav-item">
                 <div class="nav-icon">📰</div>
                 <p>Berita</p>
             </a>
