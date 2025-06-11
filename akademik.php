@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Akademik</title>
   <link rel="stylesheet" href="css/akademik.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
   <!-- Navbar -->
@@ -15,14 +16,17 @@
             <h1>SPENDAPRA</h1>
             <p>SMPN 2 PRAMBON</p>
         </div>
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-ellipsis-v"></i>
+        </div>
     </div>
     <nav>
         <ul class="active">
-            <li><a href="utama.html">Home</a></li>
-            <li><a href="tentang.html">Tentang Spendapra</a></li>
-            <li><a href="akademik.html">Akademik</a></li>
-            <li><a href="profil.html">Profil Guru</a></li>
-            <li><a href="pendaftaran.html">Pendaftaran</a></li>
+            <li><a href="utama.php">Home</a></li>
+            <li><a href="tentang.php">Tentang Spendapra</a></li>
+            <li><a href="akademik.php">Akademik</a></li>
+            <li><a href="profil.php">Profil Guru</a></li>
+            <li><a href="pendaftaran.php">Pendaftaran</a></li>
             <li><a href="PHP/login.php">Login</a></li>
             <li><a href="PHP/Signin.php">Sign In</a></li>
         </ul>
@@ -32,20 +36,20 @@
   <div class="container">
     <div class="photo-section">
         <div class="main-photo">
-            <div>DIES NATALIS<br>SMPN 2 PRAMBON</div>
+            <img src="img/exkul.png" alt="Logo Spendapra" />
         </div>
         
         <div class="overlay-photos">
             <div class="overlay-photo photo-1">
-                <div>Tari Tradisional</div>
+                <img src="img/exkul3.png" alt="Logo Spendapra" />
             </div>
             
             <div class="overlay-photo photo-2">
-                <div>Pramuka</div>
+                <img src="img/exkul2.png" alt="Logo Spendapra" />
             </div>
             
             <div class="overlay-photo photo-3">
-                <div>Kegiatan Siswa</div>
+                <img src="img/exkul1.png" alt="Logo Spendapra" />
             </div>
         </div>
     </div>
@@ -56,12 +60,6 @@
                 <h1>EKSTRAKULIKULER</h1>
                 <h2>SMPN 2</h2>
                 <h3>PRAMBON</h3>
-            </div>
-            
-            <div class="decorative-lines">
-                <div class="line line-1"></div>
-                <div class="line line-2"></div>
-                <div class="line line-3"></div>
             </div>
         </div>
     </div>
@@ -180,7 +178,7 @@
    <footer>
     <div class="footer-container">
         <div class="header">
-            <img src="img/Logo.jpg" alt="Logo SMPN 2 Prambon" class="logo">
+            <img src="img/logo.png" alt="Logo SMPN 2 Prambon" class="logo">
             <div class="title">
                 <h1>SPENDAPRA</h1>
                 <div class="badge">SMPN 2 PRAMBON</div>
@@ -206,5 +204,16 @@
         </div
     </div>
 </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const hamburger = document.getElementById('hamburger');
+      const navList = document.querySelector('nav ul');
+      if (hamburger && navList) {
+        hamburger.addEventListener('click', function () {
+          navList.classList.toggle('active');
+        });
+      }
+    });
+  </script>
 </body>
 </html>

@@ -31,6 +31,7 @@ header {
   align-items: center;
   flex-wrap: wrap;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  position: relative;
 }
 
 .logo-container {
@@ -59,6 +60,16 @@ header {
   margin: 0;
 }
 
+/* Hamburger menu - hidden by default */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 0px 0px 10px 150px;
+  color: #2ca59c;
+}
+
+/* Navigation menu - desktop styles */
 nav ul {
   list-style: none;
   display: flex;
@@ -86,7 +97,7 @@ nav ul li.active a {
   color: #ffffff;
 }
 
-/* Body Wallppeper */
+/* Hero Section - Perbaikan untuk tata letak yang lebih responsif */
 .hero {
   position: relative;
   background: url("../img/background1.png") no-repeat center center/cover;
@@ -94,48 +105,55 @@ nav ul li.active a {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 500px;
 }
+
 .overlay {
-  background: rgba(214, 213, 213, 0.5);
-  padding: 70px 625px;
+  background: rgba(
+    214,
+    213,
+    213,
+    0.7
+  ); /* Meningkatkan opacity untuk readability */
+  padding: 30px 730px;
   text-align: center;
-  border-radius: 4px;
+  border-radius: 15px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 90%;
+  backdrop-filter: blur(5px); /* Menambah efek blur */
 }
 
 .overlay img {
   width: 250px;
-  height: 250x;
+  height: 250px;
   object-fit: contain;
-  margin-right: 15px;
-  padding-right: 10px;
+  margin-bottom: 20px;
 }
 
 .small-logo h2 {
   font-size: 65px;
   color: #ffffff;
-  margin-bottom: 2px;
-  display: flex;
-  padding-top: 40px;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Menambah shadow untuk readability */
 }
 
 .small-logo p {
-  font-size: 30px;
+  font-size: 25px;
   color: #ffffff;
   margin: 0;
-}
-
-.small-logo p {
   background-color: #2ca59c;
-  padding: 10px 10px;
+  padding: 15px 25px;
   border-radius: 15px;
   box-shadow: inset 0 0 0 2px #ffffff;
+  display: inline-block;
 }
 
-/* Body Tabel */
+/* Navigation Icons Section */
 .top-nav {
   background-color: #ececec;
-  padding: 15px 0;
+  padding: 30px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -143,47 +161,62 @@ nav ul li.active a {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .nav-item {
   display: flex;
+  flex-direction: column;
   align-items: center;
   text-decoration: none;
   color: #000000;
+  transition: transform 0.3s ease;
+  min-width: 120px;
+}
+
+.nav-item:hover {
+  transform: translateY(-5px);
 }
 
 .nav-icon {
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   background-color: #ffffff;
   border-radius: 50%;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
-  font-size: 24px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  display: flex;
+  margin-bottom: 15px;
+  font-size: 28px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  color: #2ca59c;
 }
 
 .nav-item p {
-  padding-left: 15px;
-  padding-bottom: 10px;
+  text-align: center;
   font-weight: bold;
+  font-size: 16px;
+  margin: 0;
 }
-/* Profil kepsek */
+
+/* Profil Kepala Sekolah */
 .block-bg {
   background: #ececec;
-  padding-bottom: 140px;
-  gap: 30px;
+  padding: 50px;
+  gap: 40px;
   display: flex;
   margin: 50px;
-  border-radius: 5px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .welcome-image img {
-  width: 450px;
-  height: 550px;
-  border-radius: 8px;
+  width: 350px;
+  height: 430px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .welcome-text {
@@ -194,7 +227,7 @@ nav ul li.active a {
 
 .welcome-text h2 {
   color: #3caea3;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   font-size: 45px;
 }
 
@@ -203,19 +236,15 @@ nav ul li.active a {
 }
 
 .welcome-text p {
-  margin-bottom: 15px;
-  line-height: 1.6;
+  margin-bottom: 20px;
+  line-height: 1.8;
   color: #333;
-  font-size: 30px;
-}
-
-.welcome-text br {
-  margin-top: 50px;
+  font-size: 22px; /* Mengurangi ukuran font untuk readability */
 }
 
 .principal-name {
-  font-size: 20px;
-  margin-top: 20px;
+  font-size: 22px;
+  margin-top: 30px;
   text-align: center;
   color: #000000;
   font-weight: bold;
@@ -225,37 +254,38 @@ nav ul li.active a {
   text-align: center;
   color: #000000;
   font-weight: bold;
+  font-size: 18px;
 }
 
-/* lokasi sekolah */
-
+/* Lokasi Sekolah */
 .list-space {
   background: #ececec;
-  padding-bottom: 85px;
-  gap: 30px;
-  display: flex;
+  padding: 50px;
   margin: 50px;
-  border-radius: 5px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .Judul-konten {
-  padding: 30px;
+  padding: 40px;
   background-color: #d9d9d9;
   margin: 20px 0;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 7);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 .Judul1 {
   display: flex;
-  gap: 2em;
+  gap: 3em;
   align-items: flex-start;
-  padding-left: 35px;
-  padding-top: 30px;
+  padding: 30px;
 }
 
-.Judul1 .text {
+.Judul1 .text-content {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .Judul1 h3 {
@@ -266,66 +296,79 @@ nav ul li.active a {
 
 .Judul1 h3 span {
   color: #2ca59c;
-  text-align: center;
 }
 
 .text {
-  font-size: 20px;
+  font-size: 18px;
   text-align: justify;
   font-weight: 600;
-  padding-right: 30px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.map-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 350px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.button {
+  margin-top: 20px;
 }
 
 .button button {
   width: 200px;
-  padding: 0.8em;
+  padding: 15px;
   background-color: #e77b00;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
-  margin-top: 1em;
-  transition: background-color 0.3s ease;
-  font-weight: bolder;
+  transition: all 0.3s ease;
+  font-weight: bold;
 }
 
 .button button:hover {
   background-color: #b15e00;
-  transform: scale(1.03);
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transform: scale(1.05);
 }
 
 /* Footer */
-
 footer {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  gap: 30px;
-  display: flex;
+  padding: 40px 0px;
   margin: 50px;
-  border-radius: 4; 
+  border-radius: 15px;
+  display: flex;
   justify-content: center;
 }
 
 .footer-container {
-  max-width: none; /* Hapus max-width limitation */
-  width: 99%; /* Full width container */
+  width: 100%;
   position: relative;
 }
 
-/* logo judul */
+/* Logo Header di Footer */
 .header {
   background-color: white;
-  padding: 15px 20px;
+  padding: 20px 25px;
   border-radius: 15px;
   display: inline-flex;
   align-items: center;
   position: absolute;
-  top: -30px;
+  top: -35px;
   left: 45px;
   z-index: 2;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 .logo {
@@ -350,23 +393,21 @@ footer {
 .badge {
   background-color: #00a896;
   color: white;
-  padding: 5px 20px;
+  padding: 8px 20px;
   border-radius: 20px;
   font-size: 14px;
   display: inline-block;
 }
 
-/* card */
+/* Card Footer */
 .card {
   background-color: #00a896;
   border-radius: 15px;
-  padding: 40px 50px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  width: 100%; 
-  box-sizing: border-box; 
-  align-items: center;
-  gap: 40px;
+  padding: 50px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
   display: flex;
+  gap: 50px;
 }
 
 .contact-info {
@@ -375,9 +416,9 @@ footer {
 }
 
 .contact-info p {
-  margin-bottom: 12px;
-  font-size: 20px;
-  line-height: 1.6;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.8;
   color: #ffffff;
 }
 
@@ -386,7 +427,7 @@ footer {
   font-weight: bold;
 }
 
-/* maps */
+/* Maps Section */
 .map-section {
   flex: 1;
   display: flex;
@@ -395,26 +436,412 @@ footer {
 }
 
 .map-section h2 {
-  margin-bottom: 15px;
-  font-size: 18px;
+  margin-bottom: 20px;
+  font-size: 20px;
   font-weight: bold;
-  font-weight: normal;
-  align-self: flex-end;
   color: #ffffff;
+  text-align: center;
 }
 
 .map {
-  max-width: 10px;
-  height: 100px;
-  border-radius: 8px;
+  width: 300px;
+  height: 200px;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .map img {
-  width: 90%;
-  height: 150%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  font-size: large;
-  font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 1199px) {
+  .hero {
+    height: 600px;
+  }
+
+  .overlay {
+    padding: 40px;
+  }
+
+  .block-bg,
+  .list-space {
+    margin: 30px;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 991px) {
+  .logo-container {
+    margin-left: 20px;
+  }
+
+  .overlay {
+    padding: 30px;
+  }
+
+  .block-bg {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .welcome-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
+  .welcome-text {
+    padding: 20px 0 0 0;
+  }
+
+  .list-space {
+    margin: 30px 20px;
+    padding: 30px 20px;
+  }
+
+  .Judul1 {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    gap: 2em;
+  }
+
+  .map-container iframe {
+    height: 300px;
+  }
+
+  .nav-container {
+    justify-content: center;
+  }
+
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .map-section {
+    align-items: center;
+    margin-top: 30px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  header {
+    padding: 15px 20px;
+  }
+
+  .logo-container {
+    margin-left: 0;
+  }
+
+  .logo-container img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .logo-text h1 {
+    font-size: 24px;
+  }
+
+  .logo-text p {
+    font-size: 16px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+  }
+
+  .hero {
+    height: 500px;
+  }
+
+  .overlay {
+    padding: 20px;
+    margin: 0 15px;
+  }
+
+  .overlay img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .small-logo h2 {
+    font-size: 36px;
+  }
+
+  .small-logo p {
+    font-size: 18px;
+    padding: 12px 20px;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: left;
+    gap: 30px;
+  }
+
+  .nav-item {
+    flex-direction: row;
+    min-width: auto;
+  }
+
+  .nav-icon {
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+
+  .block-bg {
+    margin: 15px;
+    padding: 25px 15px;
+  }
+
+  .list-space {
+    margin: 15px;
+    padding: 25px 15px;
+  }
+
+  .Judul1 {
+    padding: 20px 10px;
+    gap: 1.5em;
+  }
+
+  .Judul1 h3 {
+    font-size: 32px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .map-container iframe {
+    height: 250px;
+  }
+
+  .button button {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .welcome-text h2 {
+    font-size: 32px;
+  }
+
+  .welcome-text p {
+    font-size: 16px;
+  }
+
+  .Judul1 iframe {
+    width: 460px;
+    height: 200px;
+  }
+
+  footer {
+    margin: 15px;
+    padding: 20px 15px;
+  }
+
+  .card {
+    padding: 40px 20px;
+  }
+
+  .header {
+    left: 20px;
+    padding: 15px 20px;
+  }
+
+  .map {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 430px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  header {
+    padding: 12px 15px;
+  }
+
+  .hero {
+    height: 400px;
+    margin: 0;
+  }
+
+  .overlay {
+    padding: 15px 10px;
+    margin: 0 10px;
+    width: calc(100% - 20px);
+  }
+
+  .overlay img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .small-logo h2 {
+    font-size: 28px;
+  }
+
+  .small-logo p {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+
+  .top-nav {
+    padding: 20px 10px;
+  }
+
+  .nav-container {
+    padding: 0 10px;
+  }
+
+  .block-bg {
+    margin: 10px;
+    padding: 20px 10px;
+  }
+
+  .list-space {
+    margin: 10px;
+    padding: 20px 10px;
+  }
+
+  .Judul-konten {
+    padding: 20px 15px;
+    margin: 10px 0;
+  }
+
+  .Judul1 {
+    padding: 15px 5px;
+    gap: 1em;
+  }
+
+  .Judul1 h3 {
+    font-size: 28px;
+    margin-bottom: 0.8em;
+  }
+
+  .text {
+    font-size: 15px;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .map-container iframe {
+    height: 200px;
+    width: 100%;
+  }
+
+  .button {
+    margin-top: 15px;
+  }
+
+  .button button {
+    width: 100%;
+    max-width: none;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .welcome-text {
+    padding: 15px 0;
+  }
+
+  .welcome-text h2 {
+    font-size: 28px;
+  }
+
+  .welcome-text p {
+    font-size: 15px;
+  }
+
+  footer {
+    margin-top: 40px;
+    padding: 15px 10px;
+  }
+
+  .card {
+    padding: 30px 15px;
+  }
+
+  .header {
+    left: 15px;
+    padding: 12px 15px;
+  }
+
+  .title h1 {
+    font-size: 20px;
+  }
+
+  .badge {
+    font-size: 12px;
+    padding: 6px 15px;
+  }
+
+  .contact-info {
+    margin-top: 30px;
+  }
+
+  .contact-info p {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+
+  .map {
+    width: 100%;
+    max-width: none;
+    height: 180px;
+    align-items: center;
+  }
+
+  .map-section h2 {
+    font-size: 18px;
+  }
+
+  /* Pastikan tidak ada horizontal scroll */
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }

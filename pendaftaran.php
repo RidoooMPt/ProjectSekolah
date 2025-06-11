@@ -18,13 +18,13 @@
         </div>
         <nav>
             <ul class="active">
-                <li><a href="utama.html">Home</a></li>
-                <li><a href="tentang.html">Tentang Spendapra</a></li>
-                <li><a href="akademik.html">Akademik</a></li>
-                <li><a href="profil.html">Profil Guru</a></li>
-                <li><a href="pendaftaran.html">Pendaftaran</a></li>
-                <li><a href="login">Login</a></li>
-                <li><a href="signin">Sign In</a></li>
+                <li><a href="utama.php">Home</a></li>
+                <li><a href="tentang.php">Tentang Spendapra</a></li>
+                <li><a href="akademik.php">Akademik</a></li>
+                <li><a href="profil.php">Profil Guru</a></li>
+                <li><a href="pendaftaran.php">Pendaftaran</a></li>
+                <li><a href="PHP/login.php">Login</a></li>
+                <li><a href="PHP/signin.php">Sign In</a></li>
             </ul>
         </nav>
     </header>

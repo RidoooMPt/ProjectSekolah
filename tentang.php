@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang</title>
+    <title> Tentang</title>
     <link rel="stylesheet" href="css/tentang.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -15,16 +16,19 @@
                 <h1>SPENDAPRA</h1>
                 <p>SMPN 2 PRAMBON</p>
             </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
         </div>
         <nav>
             <ul class="active">
-                <li><a href="utama.html">Home</a></li>
-                <li><a href="tentang.html">Tentang Spendapra</a></li>
-                <li><a href="akademik.html">Akademik</a></li>
-                <li><a href="profil">Profil Guru</a></li>
-                <li><a href="pendaftaran.html">Pendaftaran</a></li>
-                <li><a href="login">Login</a></li>
-                <li><a href="signin">Sign In</a></li>
+                <li><a href="utama.php">Home</a></li>
+                <li><a href="tentang.php">Tentang Spendapra</a></li>
+                <li><a href="akademik.php">Akademik</a></li>
+                <li><a href="profil.php">Profil Guru</a></li>
+                <li><a href="pendaftaran.php">Pendaftaran</a></li>
+                <li><a href="PHP/login.php">Login</a></li>
+                <li><a href="PHP/signin.php">Sign In</a></li>
             </ul>
         </nav>
     </header>
@@ -128,7 +132,7 @@
                 
                 <div class="map-section">
                     <h2>Lokasi Sekolah</h2>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d506309.0252272155!2d112.59951496494749!3d-7.516003256430377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e780b0029c5ca87%3A0x2bedf254132eb7fe!2sSMPN%202%20PRAMBON!5e0!3m2!1sid!2sid!4v1749081920833!5m2!1sid!2sid" 
+                    <iframe width="560" height="315" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d506309.0252272155!2d112.59951496494749!3d-7.516003256430377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e780b0029c5ca87%3A0x2bedf254132eb7fe!2sSMPN%202%20PRAMBON!5e0!3m2!1sid!2sid!4v1749081920833!5m2!1sid!2sid" 
                             allowfullscreen="" 
                             loading="lazy" 
                             referrerpolicy="no-referrer-when-downgrade">
@@ -137,5 +141,10 @@
             </div
         </div>
     </footer>
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+    document.querySelector('nav ul').classList.toggle('active');
+    });
+    </script>
 </body>
 </html>

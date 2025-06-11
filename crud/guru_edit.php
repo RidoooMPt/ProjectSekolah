@@ -6,12 +6,13 @@ if( !isset($_GET['id']) ){
 }
 $id = $_GET['id'];
 
-$result =  mysqli_query($mysqli, "SELECT * FROM ekstrakurikuler WHERE id=$id");
+$result =  mysqli_query($mysqli, "SELECT * FROM guru WHERE id=$id");
 
-while($ekstrakurikuler_data = mysqli_fetch_array($result))
+while($guru_data = mysqli_fetch_array($result))
 {
-    $nama = $ekstrakurikuler_data['nama'];
-    $gambar = $ekstrakurikuler_data['gambar'];
+    $nama = $guru_data['nama'];
+    $mapel = $guru_data['mapel'];
+    $foto = $guru_data['foto'];
 }
 ?>
 
@@ -20,9 +21,8 @@ while($ekstrakurikuler_data = mysqli_fetch_array($result))
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Admin - TiketBudaya</title>
+    <title>Admin - Website SMPN 2 Prambon</title>
     <style>
-        /* CSS dari edit.css digabung di sini */
         body {
             font-family: Arial, sans-serif;
             background-color: #f9f9f9;
@@ -32,7 +32,7 @@ while($ekstrakurikuler_data = mysqli_fetch_array($result))
             min-height: 100vh;
         }
         header {
-            background-color: #2c3e50;
+            background-color: #00c8b6;
             color: white;
             padding: 20px;
             text-align: center;
@@ -54,7 +54,7 @@ while($ekstrakurikuler_data = mysqli_fetch_array($result))
             box-sizing: border-box;
         }
         input[type="submit"] {
-            background-color: #2980b9;
+            background-color: #00c8b6;
             color: white;
             border: none;
             padding: 8px 16px;
@@ -62,11 +62,11 @@ while($ekstrakurikuler_data = mysqli_fetch_array($result))
             border-radius: 4px;
         }
         input[type="submit"]:hover {
-            background-color: #3498db;
+            background-color: #00c8b6;
         }
         footer {
             margin-top: auto;
-            background-color: #2c3e50;
+            background-color: #00c8b6;
             color: white;
             text-align: center;
             padding: 10px 0;
@@ -76,18 +76,22 @@ while($ekstrakurikuler_data = mysqli_fetch_array($result))
 </head>
 <body>
     <header>
-        <h3>Formulir Edit Ekstrakurikuler</h3>
+        <h3>Formulir Edit guru</h3>
     </header>
 
-    <form method="POST" action="ekskul_update.php">
+    <form method="POST" action="guru_update.php">
         <table>
             <tr>
                 <td>Nama</td>
                 <td><input type="text" name="nama" value="<?php echo htmlspecialchars($nama); ?>"></td>
             </tr>
             <tr>
+                <td>Mapel</td>
+                <td><input type="text" name="mapel" value="<?php echo htmlspecialchars($mapel); ?>"></td>
+            </tr>
+            <tr>
                 <td>Gambar</td>
-                <td><input type="text" name="gambar" value="<?php echo htmlspecialchars($gambar); ?>"></td>
+                <td><input type="text" name="foto" value="<?php echo htmlspecialchars($foto); ?>"></td>
             </tr>
             <tr>
                 <td><input type="hidden" name="id" value="<?php echo htmlspecialchars($_GET['id']); ?>"></td>
@@ -97,7 +101,7 @@ while($ekstrakurikuler_data = mysqli_fetch_array($result))
     </form>
 
     <footer>
-        <p>&copy; 2024 projectsekolah. All rights reserved.</p>
+        <p>&copy; 2025 ProjectSekolah. Kelompok 14. All rights reserved.</p>
     </footer>
 </body>
 </html>
