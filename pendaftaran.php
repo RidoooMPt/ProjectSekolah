@@ -21,10 +21,10 @@
                 <li><a href="index.php">Home</a></li>
                 <li><a href="tentang.php">Tentang Spendapra</a></li>
                 <li><a href="akademik.php">Akademik</a></li>
-                <li><a href="profil.php">Profil Guru</a></li>
+                <li><a href="profil_guru.php">Profil Guru</a></li>
                 <li><a href="pendaftaran.php">Pendaftaran</a></li>
-                <li><a href="PHP/login.php">Login</a></li>
-                <li><a href="PHP/signin.php">Sign In</a></li>
+                <li><a href="login.php">Login</a></li>
+                <li><a href="signin.php">Sign In</a></li>
             </ul>
         </nav>
     </header>
@@ -190,13 +190,13 @@
                 
                 <div class="map-section">
                     <h2>Lokasi Sekolah</h2>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d506309.0252272155!2d112.59951496494749!3d-7.516003256430377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e780b0029c5ca87%3A0x2bedf254132eb7fe!2sSMPN%202%20PRAMBON!5e0!3m2!1sid!2sid!4v1749081920833!5m2!1sid!2sid" 
+                    <iframe width="560" height="315" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d506309.0252272155!2d112.59951496494749!3d-7.516003256430377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e780b0029c5ca87%3A0x2bedf254132eb7fe!2sSMPN%202%20PRAMBON!5e0!3m2!1sid!2sid!4v1749081920833!5m2!1sid!2sid" 
                             allowfullscreen="" 
                             loading="lazy" 
                             referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>  
-            </div
+            </div>
         </div>
     </footer>
 </body>

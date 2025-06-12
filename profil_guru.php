@@ -21,10 +21,10 @@
                     <li><a href="index.php">Home</a></li>
                     <li><a href="tentang.php">Tentang Spendapra</a></li>
                     <li><a href="akademik.php">Akademik</a></li>
-                    <li><a href="profil.php">Profil Guru</a></li>
+                    <li><a href="profil_guru.php">Profil Guru</a></li>
                     <li><a href="pendaftaran.php">Pendaftaran</a></li>
-                    <li><a href="PHP/login.php">Login</a></li>
-                    <li><a href="PHP/signin.php">Sign In</a></li>
+                    <li><a href="login.php">Login</a></li>
+                    <li><a href="signin.php">Sign In</a></li>
                 </ul>
             </nav>
         </header>
@@ -53,7 +53,7 @@
             </div>
             
             <div class="headmaster-card">
-                <div class="headmaster-photo">Foto Kepala<br>Sekolah</div>
+            <img src="img/kepsek-design.png" alt="Kepala Sekolah"> 
                 <div class="headmaster-name">Nama Kepala Sekolah</div>
                 <div class="headmaster-title">Kepala Sekolah S.Pd, M.Pd</div>
             </div>
@@ -69,81 +69,99 @@
                 <div class="teachers-slider" id="teachersSlider">
                     <div class="teacher-slide">
                         <div class="teacher-card">
-                            <div class="teacher-photo">Foto Guru<br>Matematika</div>
+                            <div class="teacher-photo">
+                            <img width="320" height="290" src="img/guru1.jpg" alt="Kepala Sekolah">
+                            </div>
                             <div class="teacher-name">Guru Matematika</div>
-                            <div class="teacher-subject">Matematika S.Pd, M.Pd</div>
+                            <div class="teacher-subject">Fajrul Rohman S.Pd, M.Pd</div>
                             <div class="teacher-school">SMPN 2 Prambon</div>
                         </div>
                     </div>
     
                     <div class="teacher-slide">
                         <div class="teacher-card">
-                            <div class="teacher-photo">Foto Guru<br>PKN</div>
+                            <div class="teacher-photo">
+                            <img width="320" height="290" src="img/guru2.jpg" alt="Kepala Sekolah">
+                            </div>
                             <div class="teacher-name">Guru PKN</div>
-                            <div class="teacher-subject">Pendidikan Kewarganegaraan</div>
+                            <div class="teacher-subject">Stefani anggun R S.pd</div>
                             <div class="teacher-school">SMPN 2 Prambon</div>
                         </div>
                     </div>
     
                     <div class="teacher-slide">
                         <div class="teacher-card">
-                            <div class="teacher-photo">Foto Guru<br>Seni Budaya</div>
+                            <div class="teacher-photo">
+                            <img width="320" height="290" src="img/guru3.jpg" alt="Kepala Sekolah">
+                            </div>
                             <div class="teacher-name">Guru Seni Budaya</div>
-                            <div class="teacher-subject">Seni Budaya S.Pd</div>
+                            <div class="teacher-subject">Wahyudi Saputra S.Pd</div>
                             <div class="teacher-school">SMPN 2 Prambon</div>
                         </div>
                     </div>
     
                     <div class="teacher-slide">
                         <div class="teacher-card">
-                            <div class="teacher-photo">Foto Guru<br>TIK</div>
+                            <div class="teacher-photo">
+                            <img width="320" height="290" src="img/guru4.jpg" alt="Kepala Sekolah">
+                            </div>
                             <div class="teacher-name">Guru TIK</div>
-                            <div class="teacher-subject">Teknologi Informasi</div>
+                            <div class="teacher-subject">Permata Karina S.T M.Kom</div>
                             <div class="teacher-school">SMPN 2 Prambon</div>
                         </div>
                     </div>
     
                     <div class="teacher-slide">
                         <div class="teacher-card">
-                            <div class="teacher-photo">Foto Guru<br>Bahasa Indonesia</div>
+                            <div class="teacher-photo">
+                            <img width="320" height="290" src="img/guru5.jpg" alt="Kepala Sekolah">
+                            </div>
                             <div class="teacher-name">Guru Bahasa Indonesia</div>
-                            <div class="teacher-subject">Bahasa Indonesia S.Pd</div>
+                            <div class="teacher-subject">budianto wijaya S.Pd</div>
                             <div class="teacher-school">SMPN 2 Prambon</div>
                         </div>
                     </div>
     
                     <div class="teacher-slide">
                         <div class="teacher-card">
-                            <div class="teacher-photo">Foto Guru<br>IPA</div>
+                            <div class="teacher-photo">
+                            <img width="320" height="290" src="img/guru6.jpg" alt="Kepala Sekolah">
+                            </div>
                             <div class="teacher-name">Guru IPA</div>
-                            <div class="teacher-subject">Ilmu Pengetahuan Alam</div>
+                            <div class="teacher-subject">wirata widya s.pd</div>
                             <div class="teacher-school">SMPN 2 Prambon</div>
                         </div>
                     </div>
     
                     <div class="teacher-slide">
                         <div class="teacher-card">
-                            <div class="teacher-photo">Foto Guru<br>Bahasa Inggris</div>
+                            <div class="teacher-photo">
+                            <img width="320" height="290" src="img/guru7.jpg" alt="Kepala Sekolah">
+                            </div>
                             <div class="teacher-name">Guru Bahasa Inggris</div>
-                            <div class="teacher-subject">Bahasa Inggris S.Pd</div>
+                            <div class="teacher-subject">Bunaika ramawati S S.Pd</div>
                             <div class="teacher-school">SMPN 2 Prambon</div>
                         </div>
                     </div>
     
                     <div class="teacher-slide">
                         <div class="teacher-card">
-                            <div class="teacher-photo">Foto Guru<br>IPS</div>
+                            <div class="teacher-photo">
+                            <img width="320" height="290" src="img/guru8.jpg" alt="Kepala Sekolah">
+                            </div>
                             <div class="teacher-name">Guru IPS</div>
-                            <div class="teacher-subject">Ilmu Pengetahuan Sosial</div>
+                            <div class="teacher-subject">Lyodra mahendra W S.Kom </div>
                             <div class="teacher-school">SMPN 2 Prambon</div>
                         </div>
                     </div>
     
                     <div class="teacher-slide">
                         <div class="teacher-card">
-                            <div class="teacher-photo">Foto Guru<br>Olahraga</div>
+                            <div class="teacher-photo">
+                            <img width="320" height="290" src="img/guru9.jpg" alt="Kepala Sekolah">
+                            </div>
                             <div class="teacher-name">Guru Olahraga</div>
-                            <div class="teacher-subject">Pendidikan Jasmani</div>
+                            <div class="teacher-subject">Sintah sariawan S.og </div>
                             <div class="teacher-school">SMPN 2 Prambon</div>
                         </div>
                     </div>
@@ -184,14 +202,14 @@
                 
                 <div class="map-section">
                     <h2>Lokasi Sekolah</h2>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d506309.0252272155!2d112.59951496494749!3d-7.516003256430377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e780b0029c5ca87%3A0x2bedf254132eb7fe!2sSMPN%202%20PRAMBON!5e0!3m2!1sid!2sid!4v1749081920833!5m2!1sid!2sid" 
+                    <iframe width="560" height="315" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d506309.0252272155!2d112.59951496494749!3d-7.516003256430377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e780b0029c5ca87%3A0x2bedf254132eb7fe!2sSMPN%202%20PRAMBON!5e0!3m2!1sid!2sid!4v1749081920833!5m2!1sid!2sid" 
                             allowfullscreen="" 
                             loading="lazy" 
                             referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>  
-            </div
+            </div>
         </div>
-    </footer>
+    </footer>   
 </body>
 </html>

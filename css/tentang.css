@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #000000; /* Semua teks berwarna hitam (kecuali yang diubah secara eksplisit) */
+  color: #000000;
 }
 
 body {
@@ -32,6 +32,11 @@ header {
   align-items: center;
   flex-wrap: wrap;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1001;
 }
 
 .logo-container {
@@ -41,7 +46,7 @@ header {
 }
 
 .logo-container img {
-  width: 100;
+  width: 100px;
   height: 100px;
   object-fit: contain;
   margin-right: 15px;
@@ -58,6 +63,14 @@ header {
   font-size: 24px;
   color: #555;
   margin: 0;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 0px 0px 10px 150px;
+  color: #2ca59c;
 }
 
 nav ul {
@@ -97,18 +110,19 @@ nav ul li.active a {
   align-items: center;
   justify-content: flex-start;
   padding: 40px 20px;
+  margin-top: 200px;
 }
 
 .judul {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 5px;
   width: 100%;
 }
 
 .judul h2 {
   font-size: 52px;
   font-weight: bold;
-  color: #29e2ba;
+  color: #000000;
   margin: 0;
 }
 
@@ -133,7 +147,7 @@ nav ul li.active a {
 
 .welcome-text {
   flex: 1;
-  padding-top: 60px;  
+  padding-top: 60px;
 }
 
 .welcome-text h2 {
@@ -172,12 +186,14 @@ nav ul li.active a {
   margin-bottom: 40px;
 }
 
-.visi-section, .misi-section {
+.visi-section,
+.misi-section {
   position: relative;
   transition: transform 0.3s ease;
 }
 
-.visi-section:hover, .misi-section:hover {
+.visi-section:hover,
+.misi-section:hover {
   transform: translateY(-5px);
 }
 
@@ -201,13 +217,18 @@ nav ul li.active a {
 }
 
 .section-header::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
   transition: left 0.5s;
 }
 
@@ -358,6 +379,7 @@ nav ul li.active a {
   justify-content: flex-start;
   padding: 0px 20px;
 }
+
 .Quotes {
   margin-top: 250px;
   text-align: center;
@@ -372,19 +394,20 @@ nav ul li.active a {
 .Quotes span {
   color: #ffa127;
 }
+
 /* Footer */
 footer {
   padding-bottom: 40px;
   gap: 30px;
   display: flex;
   margin: 10px 10px 50px;
-  border-radius: 4; 
+  border-radius: 4;
   justify-content: center;
 }
 
 .footer-container {
-  max-width: none; /* Hapus max-width limitation */
-  width: 99%; /* Full width container */
+  max-width: none;
+  width: 99%;
   position: relative;
 }
 
@@ -436,8 +459,8 @@ footer {
   border-radius: 15px;
   padding: 40px 50px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  width: 100%; 
-  box-sizing: border-box; 
+  width: 100%;
+  box-sizing: border-box;
   align-items: center;
   gap: 40px;
   display: flex;
@@ -493,10 +516,9 @@ footer {
   font-weight: bold;
 }
 
-/* Responsif */
+/* MEDIA QUERIES - RESPONSIVE */
 
-/* Responsive untuk halaman tentang */
-
+/* Tablet */
 @media (max-width: 991px) {
   .content-container {
     flex-direction: column;
@@ -559,18 +581,22 @@ footer {
   .map-section iframe {
     width: 460px;
     height: 250px;
-  } 
+  }
 }
 
+/* Mobile - Hamburger muncul di sini */
 @media (max-width: 767px) {
   header {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding: 15px 20px;
+    position: relative;
   }
 
   .logo-container {
     margin-left: 0;
+    flex: 1;
   }
 
   .logo-container img {
@@ -586,11 +612,13 @@ footer {
     font-size: 16px;
   }
 
+  /* Hamburger TAMPIL di mobile */
   .hamburger {
     display: block;
-    padding-left: 140px;
+    order: 2;
   }
 
+  /* Navigation TERSEMBUNYI di mobile */
   nav ul {
     display: none;
     flex-direction: column;
@@ -601,9 +629,10 @@ footer {
     background-color: #ffffff;
     padding: 20px 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    z-index: 1000;
+    z-index: 999;
   }
 
+  /* Navigation TAMPIL saat active */
   nav ul.active {
     display: flex;
   }
@@ -639,47 +668,10 @@ footer {
   .map-section iframe {
     width: 460px;
     height: 250px;
-  } 
-
-  @media (max-width: 767px) {
-    nav ul {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      position: absolute;
-      top: 100%; /* Posisi tepat di bawah header */
-      left: 0;
-      background-color: #ffffff;
-      padding: 20px 0;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-      z-index: 999;
-    }
-  
-    nav ul.active {
-      display: flex;
-    }
-  
-    nav ul li {
-      width: 100%;
-      text-align: center;
-      padding: 12px 0;
-    }
-  
-    header {
-      position: relative; /* Tambahkan ini agar nav ul bisa ditetapkan relatif terhadap header */
-    }
-  
-    .hamburger {
-      display: block;
-      cursor: pointer;
-      font-size: 24px;
-      margin-left: auto;
-      color: #2ca59c;
-    }
   }
-  
 }
 
+/* Small Mobile */
 @media (max-width: 430px) {
   .content-container {
     padding: 0 10px;
@@ -719,7 +711,7 @@ footer {
     width: 330px;
     height: 230px;
     border-radius: 5px;
-  } 
+  }
 
   .badge {
     font-size: 12px;
